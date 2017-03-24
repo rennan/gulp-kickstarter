@@ -1,0 +1,61 @@
+{
+	"path": {
+		"modules": "node_modules",
+		"externalResources": "external-resources",
+		"application": "application",
+		"distribution": "distribution",
+		"source": "source",
+		"templates": "templates",
+		"pages": "pages",
+		"_components": "components",
+		"_directives": "directives",
+		"assets": "assets",
+		"fonts": "fonts",
+		"images": "images",
+		"sprites": "sprites",
+		"stylesheets": "stylesheets",
+		"scripts": "scripts",
+		"sourcemaps": "sourcemaps",
+		"vendors": "vendors",
+		"libraries": "libraries",
+		"plugins": "plugins"
+	},
+	"sprites": {
+		"image": "sprite.png",
+		"stylesheet": "_sprites.scss"
+	},
+	"images": {
+		"optimizationLevel": 7,
+		"progressive": true,
+		"interlaced": true
+	},
+	"stylesheets": {
+		"outputStyle": "compressed"
+	},
+	"externalResources": {
+		"material-design-icons": [
+			""
+		]
+	},
+	"concat": {
+		"application.vendors.js": [
+			"",
+			""
+		],
+		"application.vendors.css": [
+			""
+		]
+	},
+	"views": {
+		"collapseWhitespace": true,
+		"caseSensitive": true,
+		"minifyCSS": true,
+		"minifyJS": true,
+		"decodeEntities": true,
+		"collapseBooleanAttributes": true
+	},
+	"browser": {
+		"port": 8083,
+		"notify": false
+	}
+}
