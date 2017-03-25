@@ -1,10 +1,17 @@
 {
-  "name": "project-kickstarter",
+  "name": "nunjucks-browser-sync-kickstarter",
   "version": "0.0.1",
-  "description": "Static project kickstarter",
+  "description": "Personal project kickstarter including generic stuffs.",
   "main": "index.js",
   "license": "MIT",
-  "author": "Advise Brasil",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rennan/nunjucks-browser-sync-kickstarter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rennan/nunjucks-browser-sync-kickstarter/issues"
+  },
+  "author": "Rennan Martini Rodrigues",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
