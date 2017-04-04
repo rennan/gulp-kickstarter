@@ -439,7 +439,6 @@ gulp
 
 	})
 
-	//.task('build', ['external-resources', 'scripts', 'concat', 'views', 'favicon', 'fonts', 'sprites', 'images', 'stylesheets', 'cache'])
 	.task('build', ['scripts', 'nunjucks', 'favicon', 'fonts', 'sprites', 'images', 'stylesheets'])
 
 	.task('default', ['browser', 'watch']);
