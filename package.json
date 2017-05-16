@@ -1,17 +1,17 @@
 {
-  "name": "nunjucks-browser-sync-kickstarter",
+  "name": "gulp-kickstarter",
   "version": "0.0.1",
   "description": "Personal project kickstarter including generic stuffs.",
   "main": "index.js",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rennan/nunjucks-browser-sync-kickstarter.git"
+    "url": "https://github.com/rennan/gulp-kickstarter.git"
   },
   "bugs": {
-    "url": "https://github.com/rennan/nunjucks-browser-sync-kickstarter/issues"
+    "url": "https://github.com/rennan/gulp-kickstarter/issues"
   },
-  "author": "Rennan Martini Rodrigues",
+  "author": "Rennan Martini",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
