@@ -5,13 +5,14 @@
 // Bootstrap can be removed entirely by deleting this line.
 @import "bootstrap/bootstrap";
 
-//@import "_sprites";
+@import "sprites";
 
 // Mixins
 @import "mixins/font-face";
 
 // Components
 @import "components/font";
+@import "components/icons";
 
 // Layout
 @import "layout/_template";

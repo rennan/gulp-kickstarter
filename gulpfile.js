@@ -87,26 +87,26 @@ gulp
 	.task('sprites', function() {
 
 		var
+			sprite = gulp.src(path.join(imagesSourcePath, pathConfig.sprites, '**', '*.png'))
 
-			sprite = gulp
+			.pipe(spritesmith({
 
-				.src(path.join(imagesSourcePath, pathConfig.sprites, '**', '*.png'))
+				imgName: path.join('..', pathConfig.images, config.sprites.image),
 
-				.pipe(
-					spritesmith({
-						padding: 6,
-						'imgName': path.join('..', pathConfig.images, config.sprites.image),
-						'cssName': config.sprites.stylesheet,
-						'algorithm': 'binary-tree',
-						'cssVarMap': function(item) {
+				cssName: config.sprites.stylesheet,
 
-							if (item.name.indexOf('-hover') !== -1)
+				cssFormat: 'css',
 
-								item.name = item.name.replace('-hover', ':hover') + ',' + '.' + item.name.replace('-hover', '.active');
+				padding: 10,
 
-						}
-					})
-				);
+				cssOpts: {
+					cssSelector: function (item) {
+						return '.' + item.name;
+					},
+					padding: 10
+				}
+
+			}));
 
 		sprite.img.pipe(gulp.dest(imagesDistributionPath));
 
@@ -439,6 +439,7 @@ gulp
 
 	})
 
+	//.task('build', ['external-resources', 'scripts', 'concat', 'views', 'favicon', 'fonts', 'sprites', 'images', 'stylesheets', 'cache'])
 	.task('build', ['scripts', 'nunjucks', 'favicon', 'fonts', 'sprites', 'images', 'stylesheets'])
 
 	.task('default', ['browser', 'watch']);
