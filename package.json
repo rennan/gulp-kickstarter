@@ -1,41 +1,47 @@
 {
   "name": "gulp-kickstarter",
-  "version": "0.0.1",
-  "description": "Personal project kickstarter including generic stuffs.",
-  "main": "index.js",
-  "license": "MIT",
+  "version": "1.0.0",
+  "description": "A simple kickstarter for front-end web development - built with Gulp v4",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp watch",
+    "build": "gulp",
+    "clean": "gulp clean"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rennan/gulp-kickstarter.git"
+    "url": "git+https://github.com/rennan/gulp-kickstarter.git"
   },
+  "keywords": [
+    "gulp",
+    "gulp-v4",
+    "boilerplate",
+    "kickstarter",
+    "front-end"
+  ],
+  "author": "Rennan Rodrigues",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/rennan/gulp-kickstarter/issues"
   },
-  "author": "Rennan Martini",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "homepage": "https://github.com/rennan/gulp-kickstarter#readme",
   "devDependencies": {
-    "browser-sync": "^2.17.3",
-    "connect-modrewrite": "^0.9.0",
-    "del": "^2.2.2",
-    "fontmin": "^0.9.6",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-changed": "^1.3.1",
-    "gulp-concat": "^2.6.0",
-    "gulp-html-beautify": "^1.0.1",
-    "gulp-htmlmin": "^3.0.0",
-    "gulp-if": "^2.0.2",
-    "gulp-imagemin": "^3.0.1",
-    "gulp-jshint": "^2.0.1",
-    "gulp-nunjucks-render": "^2.0.0",
-    "gulp-plumber": "^1.1.0",
-    "gulp-sass": "^2.3.2",
-    "gulp-sourcemaps": "^1.6.0",
-    "gulp-uglify": "^1.5.4",
-    "gulp-watch": "^4.3.11",
-    "gulp.spritesmith": "^6.2.1",
-    "jshint": "^2.9.2"
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "autoprefixer": "^9.7.4",
+    "browser-sync": "^2.26.7",
+    "cssnano": "^4.1.10",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-terser": "^1.2.0"
   }
 }

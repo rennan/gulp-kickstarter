@@ -1,19 +1,72 @@
-<p align="center">
-  <a href="http://gulpjs.com">
-    <img height="257" width="114" src="https://raw.githubusercontent.com/gulpjs/artwork/master/gulp-2x.png">
-  </a>
-  <p align="center">Gulp Kickstarter</p>
-</p>
+# Gulp Boilerplate [![Build Status](https://travis-ci.com/rennan/gulp-boilerplate.svg?token=6xPTYyj9yJazuMpzepqi&branch=master)](https://travis-ci.com/LucasWinkler/gulp-boilerplate)
 
-# Gulp.js Kickstarter
-Static website kickstarter using: nunjucks, sass, sprite, jshint & browsersync.
+A simple boilerplate for front-end web development which uses [Gulp](https://gulpjs.com/) v4.
 
-## Usage
-Clone this repository and type the commands below:
+This is my first time trying gulp so it won't be perfect. I just wanted to create a basic template to work off of with a file structure I liked.
 
-```terminal
-$ npm install
-$ gulp build
-$ gulp
+## Features
+
+- Live reloading
+- Cache busting
+- SCSS converted to css, auto prefixed and minified with sourcemaps)
+- Javascript concatenated into a single file, minified with sourcemaps and supports ES6)
+- Image minifying
+
+## Getting Started
+
+Follow these steps in order to get the website up and running locally on your machine.
+
+### Installation
+
+- `npm install` to install any dependencies
+- `npm start` or `gulp watch` to start a live reload session
+
+### Building
+
+- `npm run build` or `gulp` to build the application
+
+### Extras
+
+- `gulp` or `gulp build` to build the application
+- `gulp watch` to enable live reload
+- `gulp clean` to delete the build folder
+- `gulp styles` to run the style tasks
+- `gulp scripts` to run the script tasks
+- `gulp images` to run the image tasks
+- `gulp favicon` to run the favicon tasks
+
+## File Structure
+
+```bash
+├── app
+│   ├── images
+│   │
+│   ├── js
+│   │   ├── main.js
+│   │   │
+│   │   └── vendors
+│   │
+│   └── scss
+│       ├── abstracts
+│       │
+│       ├── base
+│       │
+│       ├── pages
+│       │
+│       └── main.scss
+│
+└── build
+    ├── images
+    │
+    ├── js
+    │   ├── app.min.js
+    │   │
+    │   └── vendors.min.js
+    │
+    └── css
+        └── styles.min.css
 ```
-The default task will be watching entire project.
+
+## Tips
+
+- You can use any file structure for your javascript and scss files. The one provided is an example.
