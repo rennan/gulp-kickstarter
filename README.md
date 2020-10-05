@@ -1,6 +1,6 @@
-# Gulp Boilerplate [![Build Status](https://travis-ci.com/rennan/gulp-boilerplate.svg?token=6xPTYyj9yJazuMpzepqi&branch=master)](https://travis-ci.com/LucasWinkler/gulp-boilerplate)
+# Gulp Kickstarter [![Build Status](https://travis-ci.com/rennan/gulp-kickstarter.svg?token=6xPTYyj9yJazuMpzepqi&branch=master)](https://travis-ci.com/rennan/gulp-kickstarter)
 
-A simple boilerplate for front-end web development which uses [Gulp](https://gulpjs.com/) v4.
+A simple kickstarter to front-end web development which uses [Gulp](https://gulpjs.com/) v4.
 
 This is my first time trying gulp so it won't be perfect. I just wanted to create a basic template to work off of with a file structure I liked.
 
